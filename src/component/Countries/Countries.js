@@ -5,6 +5,7 @@ import "./Countries.css";
 
 const Countries = (props) => {
     const {name ,capital,flag} = props.country
+    
     const history = useHistory();
     const handleClick = (countryName) =>{
         history.push(`/name/${countryName}`);
